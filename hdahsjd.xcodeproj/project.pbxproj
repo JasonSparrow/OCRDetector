@@ -13,6 +13,7 @@
 		96226FF11FB8362600934C02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96226FF01FB8362600934C02 /* Assets.xcassets */; };
 		96226FF41FB8362600934C02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96226FF21FB8362600934C02 /* LaunchScreen.storyboard */; };
 		96226FF71FB8362600934C02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96226FF61FB8362600934C02 /* main.m */; };
+		96226FFE1FB836CD00934C02 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96226FFD1FB836CD00934C02 /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		96226FF31FB8362600934C02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96226FF51FB8362600934C02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96226FF61FB8362600934C02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		96226FFD1FB836CD00934C02 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96226FFE1FB836CD00934C02 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 				96226FEA1FB8362600934C02 /* ViewController.h */,
 				96226FEB1FB8362600934C02 /* ViewController.m */,
 				96226FED1FB8362600934C02 /* Main.storyboard */,
+				96226FFD1FB836CD00934C02 /* opencv2.framework */,
 				96226FF01FB8362600934C02 /* Assets.xcassets */,
 				96226FF21FB8362600934C02 /* LaunchScreen.storyboard */,
 				96226FF51FB8362600934C02 /* Info.plist */,
@@ -279,6 +283,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/hdahsjd",
+				);
 				INFOPLIST_FILE = hdahsjd/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jason.hdahsjd;
@@ -292,6 +300,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/hdahsjd",
+				);
 				INFOPLIST_FILE = hdahsjd/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jason.hdahsjd;
