@@ -4,7 +4,6 @@
 target 'OCRDetector' do
   # Uncomment this line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
-  pod 'MJRefresh', '~> 3.1.12'
   pod 'TesseractOCRiOS', '~> 4.0.0'
   # Pods for OCRDetector
 
