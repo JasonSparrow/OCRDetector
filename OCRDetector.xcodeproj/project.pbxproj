@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		836E8CE91B7889965F5DB8C4 /* libPods-OCRDetector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 850F74DEFFD73A5B513C8A42 /* libPods-OCRDetector.a */; };
 		9622702F1FB8375100934C02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9622702E1FB8375100934C02 /* AppDelegate.m */; };
 		962270321FB8375100934C02 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 962270311FB8375100934C02 /* ViewController.m */; };
 		962270351FB8375100934C02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 962270331FB8375100934C02 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4AE4A72332ED6D5A8E686D2D /* Pods-OCRDetector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCRDetector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCRDetector/Pods-OCRDetector.debug.xcconfig"; sourceTree = "<group>"; };
+		850F74DEFFD73A5B513C8A42 /* libPods-OCRDetector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OCRDetector.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9622702A1FB8375100934C02 /* OCRDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCRDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9622702D1FB8375100934C02 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9622702E1FB8375100934C02 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		962270391FB8375100934C02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9622703B1FB8375100934C02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9622703C1FB8375100934C02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B12E6E0868D7453E856881BF /* Pods-OCRDetector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCRDetector.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCRDetector/Pods-OCRDetector.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				836E8CE91B7889965F5DB8C4 /* libPods-OCRDetector.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02F3F34C609A081ABCFF305B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				850F74DEFFD73A5B513C8A42 /* libPods-OCRDetector.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		962270211FB8375100934C02 = {
 			isa = PBXGroup;
 			children = (
 				9622702C1FB8375100934C02 /* OCRDetector */,
 				9622702B1FB8375100934C02 /* Products */,
+				BEE9496BA427C7FF7EDB6580 /* Pods */,
+				02F3F34C609A081ABCFF305B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +86,15 @@
 			path = OCRDetector;
 			sourceTree = "<group>";
 		};
+		BEE9496BA427C7FF7EDB6580 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4AE4A72332ED6D5A8E686D2D /* Pods-OCRDetector.debug.xcconfig */,
+				B12E6E0868D7453E856881BF /* Pods-OCRDetector.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 962270401FB8375100934C02 /* Build configuration list for PBXNativeTarget "OCRDetector" */;
 			buildPhases = (
+				985A55E329DB09AB34E2C909 /* [CP] Check Pods Manifest.lock */,
 				962270261FB8375100934C02 /* Sources */,
 				962270271FB8375100934C02 /* Frameworks */,
 				962270281FB8375100934C02 /* Resources */,
+				F1F8036E8C0151C45A41FF7E /* [CP] Embed Pods Frameworks */,
+				5FD405464B90FDDD5DF48706 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5FD405464B90FDDD5DF48706 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OCRDetector/Pods-OCRDetector-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		985A55E329DB09AB34E2C909 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F1F8036E8C0151C45A41FF7E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OCRDetector/Pods-OCRDetector-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		962270261FB8375100934C02 /* Sources */ = {
@@ -276,6 +351,7 @@
 		};
 		962270411FB8375100934C02 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AE4A72332ED6D5A8E686D2D /* Pods-OCRDetector.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,6 +366,7 @@
 		};
 		962270421FB8375100934C02 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B12E6E0868D7453E856881BF /* Pods-OCRDetector.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
