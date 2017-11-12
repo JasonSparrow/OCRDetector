@@ -43,6 +43,7 @@
 		9622704D1FB83D4900934C02 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		9622704F1FB83D7300934C02 /* ProcessImage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ProcessImage.mm; sourceTree = "<group>"; };
 		962270501FB83D7300934C02 /* ProcessImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessImage.h; sourceTree = "<group>"; };
+		962270521FB83DE300934C02 /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
 		B12E6E0868D7453E856881BF /* Pods-OCRDetector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCRDetector.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCRDetector/Pods-OCRDetector.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +104,7 @@
 				962270311FB8375100934C02 /* ViewController.m */,
 				962270501FB83D7300934C02 /* ProcessImage.h */,
 				9622704F1FB83D7300934C02 /* ProcessImage.mm */,
+				962270521FB83DE300934C02 /* Document.h */,
 				962270331FB8375100934C02 /* Main.storyboard */,
 				962270361FB8375100934C02 /* Assets.xcassets */,
 				962270381FB8375100934C02 /* LaunchScreen.storyboard */,
